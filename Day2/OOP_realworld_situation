@@ -1,0 +1,27 @@
+class BankAccount(object):
+    def __init__(self):
+        pass
+    def withdraw():
+        pass
+    def deposit():
+        pass
+
+class CurrentAccount(BankAccount):
+    def __init__(self):
+        self.balance = 0
+
+    def deposit(self, amount):
+        if (amount < 0):
+            return " Invalid amount"
+        else:
+            self.balance += amount
+            return self.balance
+
+    def withdraw(self, amount):
+         if (amount < 0):
+             return "Invalid amount"
+         elif (self.balance < 0):
+             return "Amount exceeds account balance"
+         else:
+             self.balance -= amount
+             return self.balance
