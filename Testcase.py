@@ -18,5 +18,6 @@ class TestPrimeNumbers(unittest.Testcase):
     def test_zero_is_not_prime(self):
         self.assertNotIn(0, prime_numbers(5))
 
-
+if __name__=='__main__':
+    unittest.main()
  
