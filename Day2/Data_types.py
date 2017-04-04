@@ -13,14 +13,11 @@ def data_type(A):
     elif A is None:
         return 'no value'
     elif type(A) is list:
-        if len(A)!= 3:
-            return 'undefined'
+        if len(A)>= 3:
+            if A[2]!=None:
+                return A[2]
         else:
-            return [2]
-    elif type(A)== func():
-         if (arg==True):
-             return 'called callback'
-         else:
-             return None
+             return 'None'
+        
     else:
          pass
