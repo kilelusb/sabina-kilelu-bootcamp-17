@@ -3,6 +3,7 @@ import json
 
 #parameters are the latitude and longitude of Nairobi City
 parameters = {"lat":-1.23, "lon":37}
+
 #this is an open notify url for international space station pass times
 url_open = 'http://api.open-notify.org/iss-pass.json'
 
