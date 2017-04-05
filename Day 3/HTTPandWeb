@@ -1,0 +1,14 @@
+import requests
+import json
+
+#parameters are the latitude and longitude of Nairobi City
+parameters = {"lat":-1.23, "lon":37}
+#this is an open notify url for international space station pass times
+url_open = 'http://api.open-notify.org/iss-pass.json'
+
+response = requests.get(url_open, params = parameters)
+
+response_2 = requests.get(url_open,params=parameters)
+
+print (response.status_code)
+print (response_2.content)
