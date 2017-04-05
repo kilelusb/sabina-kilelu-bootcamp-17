@@ -1,4 +1,4 @@
-def word_count(A):
+def words(A):
     wordlist = A.split()
     word_freq = []
     for word in wordlist:
