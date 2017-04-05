@@ -12,8 +12,8 @@ class TestPrimeNumbers(unittest.Testcase):
     def test_returns_list(self):
         self.assertIsInstance(prime_numbers(5), list)
 
-    def test_one_is_prime(self):
-        self.assertIn(1, prime_numbers(5))
+    def test_one_is_not_prime(self):
+        self.assertNotIn(1, prime_numbers(5))
 
     def test_zero_is_not_prime(self):
         self.assertNotIn(0, prime_numbers(5))
