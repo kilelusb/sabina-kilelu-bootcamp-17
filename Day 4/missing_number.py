@@ -2,7 +2,7 @@ def find_missing(A,B):
     #checking if the list contains only integers
 
     AandB=A+B
-    if all(isinstance(item,int) for item in AandB):
+    if all(isinstance(item,int) for item in AandB) and all(item>0 for item in AandB):
            array1=set(A)
            array2=set(B)
 
