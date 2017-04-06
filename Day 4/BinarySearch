@@ -1,0 +1,32 @@
+class BinarySearch(list):
+    myList=list()
+    a=len(myList)
+    #b is the differnce between two consecutive numbers
+
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+        for i in range(b,(a*b)+1,b):
+            self.append(i)
+
+    def search(self,value):
+        solution={}
+        counter=0
+        value_index=0
+        minimum=0
+        maximum = self.a
+        while minimum<=maximum:
+            
+            mid=(maximum+minimum)//2
+
+            if value==self[mid]:
+                value_index = mid
+            else:
+                counter +=1
+                if value < self[mid]:
+                    maximum = mid-1
+                else:
+                    minimum = mid+1
+
+        solution={'count':counter,'index':value_index}
+        return solution
